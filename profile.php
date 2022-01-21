@@ -209,7 +209,7 @@
                         $rowO = mysqli_fetch_array($checkBio);
                         $display = $rowO['bio'];
 
-                        if (!empty($display) && $display == ''){
+                        if (!empty($display) && $display != ''){
                     ?>
                         <div id="under"><div id="posting"><?php echo "<pre>" . $display . "</pre>" ?></div></div>
                     <?php
